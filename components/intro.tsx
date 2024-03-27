@@ -2,6 +2,7 @@
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
@@ -11,6 +12,7 @@ import { HiDownload } from "react-icons/hi";
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const t = useTranslations("intro");
 
   return (
     <section
@@ -57,15 +59,11 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Je me présente je suis Rayane.</span> Je
-        suis <span className="font-bold">developpeur Full-Stack</span> depuis{" "}
-        <span className="font-bold">2 ans.</span> J'aime construire des
-        <span className="italic"> sites & des applications</span>. Je souhaite
-        apporter{" "}
-        <span className="underline">
-          mon expertise et ma créativité à vos projets
-        </span>
-        .
+        <span className="font-bold">{t("presentation")}</span> {t("jesuis")}{" "}
+        <span className="font-bold">{t("dev")}</span> {t("depuis")}{" "}
+        <span className="font-bold">{t("deux")}</span> {t("construire")}
+        <span className="italic">{t("website")}</span>
+        {t("apporter")} <span className="underline">{t("expertise")}</span>
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
@@ -81,7 +79,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contactez moi{" "}
+          {t("contact")}{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
@@ -89,7 +87,7 @@ export default function Intro() {
           href="/CV.pdf"
           download={true}
         >
-          Télécharger mon CV{" "}
+          {t("CV")}{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
         <a

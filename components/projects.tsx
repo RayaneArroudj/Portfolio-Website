@@ -1,5 +1,5 @@
 "use client";
-import { projectsData } from "@/lib/data";
+import useData from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import React from "react";
@@ -8,6 +8,7 @@ import SectionHeading from "./section-heading";
 
 export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.5);
+  const { projectsData } = useData();
 
   return (
     <motion.section

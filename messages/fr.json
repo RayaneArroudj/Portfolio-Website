@@ -1,0 +1,61 @@
+{
+  "intro": {
+    "presentation": "Je me présente je suis Rayane.",
+    "jesuis": "Je suis",
+    "dev": "developpeur Full-Stack",
+    "depuis": "depuis",
+    "deux": "deux ans.",
+    "construire": "J'aime construire des",
+    "website": "sites & des applications.",
+    "apporter": " Je souhaite apporter",
+    "expertise": "mon expertise et ma créativité à vos projets.",
+    "contact": "Contactez moi",
+    "CV": "Télécharger mon CV"
+  },
+  "about": {
+    "titre": "A propos de moi",
+    "diplome": "Titulaire d'un diplôme en",
+    "commerce": "Commerce international",
+    "passion": ", j'ai décidé de poursuivre ma passion pour la programmation. Je me suis inscrit à un bootcamp et j'ai appris le",
+    "dev": "développement web full-stack",
+    "prefere": "Ce que je préfère dans la programmation",
+    "probleme": "c'est l'aspect résolution de problèmes. J'aime ",
+    "sentiment": " le sentiment",
+    "solution": " lorsque je trouve enfin une solution à un problème. Ma stack principal est composé de",
+    "stack": "React, Next.js, Node.js, postgreSQL et elasticsearch.",
+    "apprendre": " Je suis toujours à la recherche de nouvelles technologies à apprendre. Je suis actuellement à la recherche d'un",
+    "poste": "poste à temps plein",
+    "web": "en tant que développeur web.",
+    "hesite": "N'hésitez pas",
+    "contact": " à me contacter pour en",
+    "moi": "apprendre plus sur moi."
+  },
+  "language-switcher": {
+    "fr": "Français",
+    "en": "Anglais"
+  },
+  "data": {
+    "Acceuil": "Acceuil",
+    "Apropos": "Présentation",
+    "Projets": "Projets",
+    "Competences": "Compétences",
+    "Experience": "Experience",
+    "Contact": "Contact",
+    "devweb": {
+      "title": "Diplome Developpeur web / mobile",
+      "description": "Préparation et obtention du titre de developpeur web et mobile, apres un cursus de 6 mois orienté sur le developpement web."
+    },
+    "locab": {
+      "title": "Developpeur web Full-stack chez Loca-b",
+      "description": "Conception et developpement d'une application web pour la location de matériel de puériculture. Stack technique: Next.js, PostgreSQL, Prisma, Cypress, i18next, Next-auth."
+    },
+    "concept": {
+      "title": "Concepteur developpeur d'applications",
+      "description": "Diplomé du titre de Concepteur developpeur d'application, apres un cursus de un an tourné sur le developpement web et mobile."
+    },
+    "orange": {
+      "title": "Developpeur web Full-stack chez Orange",
+      "description": "Conception et developpement du back-office d'un serveur de médiation. Stack technique : React, Node.js, Fastify, Elasticsearch. "
+    }
+  }
+}

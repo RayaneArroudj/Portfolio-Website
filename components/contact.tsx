@@ -2,12 +2,14 @@
 import { sendEmail } from "@/actions/sendEmail";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import { useRef } from "react";
 import toast from "react-hot-toast";
 import SectionHeading from "./section-heading";
 import SubmitBtn from "./submit-btn";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+  const reference = useRef<HTMLFormElement>(null);
 
   return (
     <motion.section
@@ -29,6 +31,7 @@ export default function Contact() {
       </p>
 
       <form
+        ref={reference}
         className="mt-10 flex flex-col dark:text-dark"
         action={async (FormData) => {
           const { data } = await sendEmail(FormData);
@@ -38,11 +41,12 @@ export default function Contact() {
             return;
           }
           toast.success("Email envoyé avec succès");
+          reference.current?.reset();
         }}
       >
         <input
           placeholder="Votre Email"
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none dark:text-black"
           type="email"
           name="senderEmail"
           required
@@ -50,7 +54,7 @@ export default function Contact() {
         />
         <textarea
           placeholder="Votre message"
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none dark:text-black"
           name="message"
           required
           maxLength={5000}

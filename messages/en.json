@@ -1,0 +1,62 @@
+{
+  "intro": {
+    "presentation": "Hello, I'm Rayane.",
+    "jesuis": " I'm a",
+    "dev": "full-stack developer",
+    "depuis": "since",
+    "deux": "2 years.",
+    "construire": "I enjoy building",
+    "website": "website & apps.",
+    "apporter": " I want to bring",
+    "expertise": "my expertise and creativity to your project.",
+    "contact": "Contact me",
+    "CV": "Download my CV"
+  },
+  "about": {
+    "titre": "About Me",
+    "diplome": "Holder of a degree in",
+    "commerce": "International Business",
+    "passion": ", I decided to pursue my passion for programming. I enrolled in a bootcamp and learned",
+    "dev": "full-stack web development",
+    "prefere": "What I like most about programming",
+    "probleme": "is the problem-solving aspect. I love ",
+    "sentiment": "the feeling",
+    "solution": " when I finally find a solution to a problem. My main stack is composed of",
+    "stack": "React, Next.js, Node.js, postgreSQL and elasticsearch.",
+    "apprendre": " I am always looking for new technologies to learn. I am currently looking for a",
+    "poste": "full-time position",
+    "web": "as a web developer.",
+    "hesite": "Feel free",
+    "contact": " to contact me",
+    "moi": "to learn more about myself."
+  },
+  "language-switcher": {
+    "fr": "French",
+    "en": "English"
+  },
+  "data": {
+    "Acceuil": "Home",
+    "Apropos": "About",
+    "Projets": "Projects",
+    "Competences": "Skills",
+    "Experience": "Experience",
+    "Contact": "Contact",
+
+    "webdev": {
+      "title": "Web/Mobile Developer Diploma",
+      "description": "Obtained a Web/Mobile Developer Diploma after a 6-month program focused on web development."
+    },
+    "locab": {
+      "title": "Full-stack Web Developer at Loca-b",
+      "description": "Designed and developed a web application for renting childcare equipment. Tech stack: Next.js, PostgreSQL, Prisma, Cypress, i18next, Next-auth."
+    },
+    "concept": {
+      "title": "Application Developer",
+      "description": "Graduated with an Application Developer Diploma after a one-year program focused on web and mobile development."
+    },
+    "orange": {
+      "title": "Full-stack Web Developer at Orange",
+      "description": "Designed and developed the back-office of a mediation server. Tech stack: React, Node.js, Fastify, Elasticsearch."
+    }
+  }
+}

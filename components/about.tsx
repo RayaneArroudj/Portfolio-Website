@@ -1,10 +1,12 @@
 "use client";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import SectionHeading from "./section-heading";
 
 export default function About() {
   const { ref } = useSectionInView("About");
+  const t = useTranslations("about");
 
   return (
     <motion.section
@@ -14,29 +16,20 @@ export default function About() {
       animate={{ opacity: 1, y: 0 }}
       id="about"
     >
-      <SectionHeading>A propos de moi :</SectionHeading>
+      <SectionHeading>{t("titre")}</SectionHeading>
       <p className="mb-3">
-        Titulaire d'un diplôme en{" "}
-        <span className="font-medium">Commerce international</span>, j'ai décidé
-        de poursuivre ma passion pour la programmation. Je me suis inscrit à un
-        bootcamp et j'ai appris le{" "}
-        <span className="font-medium">développement web full-stack</span>.
-        <span className="italic">Ce que je préfère dans la programmation</span>,
-        c'est l'aspect résolution de problèmes. J'aime{" "}
-        <span className="underline">le sentiment</span> lorsque je trouve enfin
-        une solution à un problème. Ma stack principal est composé de{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, postgreSQL et elasticsearch
-        </span>
-        Je suis toujours à la recherche de nouvelles technologies à apprendre.
-        Je suis actuellement à la recherche d'un{" "}
-        <span className="font-medium">poste à temps plein</span> en tant que
-        développeur web.
+        {t("diplome")} <span className="font-medium">{t("commerce")}</span>
+        {t("passion")} <span className="font-medium">{t("dev")}</span>.
+        <span className="italic">{t("prefere")}</span>, {t("probleme")}
+        <span className="underline">{t("sentiment")}</span>
+        {t("solution")} <span className="font-medium">{t("stack")}</span>
+        {t("apprendre")} <span className="font-medium">{t("poste")}</span>{" "}
+        {t("web")}
       </p>
 
       <p>
-        <span className="italic">N'hésitez pas</span> à me contacter pour en{" "}
-        <span className="font-medium">apprendre plus sur moi.</span>
+        <span className="italic">{t("hesite")}</span>
+        {t("contact")} <span className="font-medium">{t("moi")}</span>
       </p>
     </motion.section>
   );

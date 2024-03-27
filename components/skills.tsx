@@ -1,5 +1,5 @@
 "use client";
-import { skillsData } from "@/lib/data";
+import useData from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import SectionHeading from "./section-heading";
@@ -22,6 +22,7 @@ const fadeInAnimationVariants = {
 
 export default function Skills() {
   const { ref } = useSectionInView("Skills");
+  const { skillsData } = useData();
   return (
     <motion.section
       initial={{ opacity: 0, y: 100 }}
